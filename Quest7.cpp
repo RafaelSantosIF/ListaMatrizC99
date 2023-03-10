@@ -9,7 +9,7 @@ int main(){
 
 	for(i=0; i < L; i++){
 		for (j=0; j < C; j++){
-			if(i==j) m[i][j] = 1;
+			if(i==j) m[i][j] = m[i][j];
 			else m[i][j] = 0;
 		}
 	}
@@ -18,7 +18,7 @@ int main(){
 	for(i=0; i < L; i++){
 		printf("  %d [ ", i);
 		for (j=0; j < C; j++){
-			soma[j] = soma[j]+(m[i][j]);
+			soma[j] += (m[i][j]);
 			printf("%d ", m[i][j]);
 		}
 		printf("]\n");
