@@ -24,7 +24,7 @@ int main(){
 		printf("  %d [ ", i);
 		for (j=0; j < C; j++){
 			soma[j] += (m[i][j]);
-			printf("%d ", m[i][j]);
+			printf("%02d ", m[i][j]);
 		}
 		printf("]\n");
 	}
