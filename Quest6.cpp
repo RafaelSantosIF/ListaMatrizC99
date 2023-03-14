@@ -15,7 +15,7 @@ int main(){
 				m[i][j] = m[i+1][j+1];
 				if(i==L-1 && j==C-1) m[i][j] = aux;
 			} 
-			else m[i][j] = 0;
+			else m[i][j] *= -1;
 		}
 	}
 
